@@ -1,19 +1,19 @@
 /*
 
-ZX v1.0.0
+6502 Emulator v1.0.0
 Copyright (c) Alex Baldwin 2020.
 
-ZX is free software: you can redistribute it and/or modify
+6502 Emulator is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License,
 version 2 exclusively, as published by the Free Software Foundation.
 
-ZX is distributed in the hope that it will be useful,
+6502 Emulator is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with ZX. If not, see:
+along with 6502 Emulator. If not, see:
 https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt/
 
 */
