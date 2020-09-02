@@ -1,0 +1,16 @@
+A       = Accumulator   Use accumulator as value
+i       = Implied       Use the implied register as value
+#       = Immediate     User operand as the value
+
+v Use utility function to get memory address for the value to operate on
+
+a       = addressingModeAbsolute
+zp      = addressingModeZeroPage
+r       = addressingModeRelative
+(a)     = addressingModeAbsoluteIndirect
+a,x     = addressingModeAbsoluteIndexedWithX
+a,y     = addressingModeAbsoluteIndexedWithY
+zp,x    = addressingModeZeroPageIndexedWithX
+zp,y    = addressingModeZeroPageIndexedWithY
+(zp,x)  = addressingModeZeroPageIndexedIndirect
+(zp),y  = addressingModeZeroPageIndirectIndexedWithY

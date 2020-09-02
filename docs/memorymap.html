@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<!-- Begin meta tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Reply-to" content="archer@dialix.com.au (Kade Hansson)">
+<meta name="keywords" content="BBC Microcomputer, Model A, Model B, Master, Master Compact, Acorn, BBC BASIC, Manual, User Guide, Ready Reference">
+<meta name="generator" content="Zap HoTMeaL for Acorn RISC OS">
+<meta name="author" content="Kade Francis Hansson">
+<meta http-equiv="Keywords" content="BBC Micro Microcomputer User Guide Manual Reference Model A Master Compact">
+<!-- meta name="description" content="This page is part of the BBC Microcomputer User Guide." / -->
+
+<!-- End meta tags -->
+<title>BBC Micro User Guide: Appendix</title>
+<link rel="stylesheet" href="memorymap_files/index.css" type="text/css">
+</head>
+<body>
+<p><img src="memorymap_files/BBC.gif" alt=" " align="middle">&nbsp;&nbsp;<a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/Contents.html">Contents</a> / <a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/Ref.html">Reference section</a> / <a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/Ch47.html">Previous chapter</a> / Next chapter / <a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/Index.html">Index</a>
+</p><hr>
+<h1>48 Appendix</h1>
+
+
+<p>
+</p><h2>Teletext (MODE 7) Displayed Alphanumeric Characters</h2>
+<p>
+Each code produces a unique character. Thus VDU 78 or PRINT CHR$(78) would display an N since column 70, row 8 shows an N.
+
+
+
+</p><h2>
+Teletext (MODE 7) Displayed Graphic Characters</h2>
+<p>
+Each character has a code. Thus H is code 72 since it is in column 70 row 2.
+
+
+</p><h2>ASCII (MODES 0 to 6) Displayed Character Set and Control Codes</h2>
+<p>
+Each displayed character consists of 8 rows of 8 dots.
+
+
+</p><h2>Hexadecimal ASCII Codes</h2>
+
+
+
+<h2>Printed circuit board layout for the BBC Microcomputer</h2>
+
+
+
+<h2>External connections</h2>
+
+
+<h2>Memory map</h2>
+
+
+
+<strong>Memory Map Assignments</strong>
+
+<p></p><table border="1">
+<tbody><tr><td width="64">FF00-FFFF
+</td><td width="266">Operating System ROM
+</td></tr><tr><td>FE00-FEFF
+</td><td>Internal memory mapped input/output (SHEILA)
+</td></tr><tr><td>FD00-FDFF
+</td><td>External memory mapped input/output (JIM)
+</td></tr><tr><td>FC00-FCFF
+</td><td>External memory mapped input/output (FRED)
+</td></tr><tr><td>C000-FBFF
+</td><td>Operating System ROM
+</td></tr><tr><td>8000-BFFF
+</td><td>One or more languages ROMS (e.g. BASIC, PASCAL)
+</td></tr><tr><td>4000 7FFF
+</td><td>Optional RAM on Model B
+</td></tr><tr><td>0000-3FFF
+</td><td>always RAM
+</td></tr><tr><td>E00 
+</td><td>Default setting of PAGE
+</td></tr><tr><td>D80-DFF
+</td><td>allocated to machine operating system
+</td></tr><tr><td>D00-D7F
+</td><td>Used by NMI routines (eg by Disc or Econet filing systems)
+</td></tr><tr><td>C00-CFF
+</td><td>User defined character definitions
+</td></tr><tr><td>B00-BFF
+</td><td>User defined function key definitions
+</td></tr><tr><td>A00-AFF
+</td><td>RS423 receive, and cassette workspace
+</td></tr><tr><td>900-9FF
+</td><td>RS423 transmit, cassette, sound and speech workspace
+</td></tr><tr><td>800-8FF
+</td><td>Miscellaneous workspace
+</td></tr><tr><td>400-7FF
+</td><td>Language ROM workspace
+</td></tr><tr><td>300-3FF
+</td><td>Miscellaneous workspace
+</td></tr><tr><td>200-2FF
+</td><td>Operating system workspace and indirection vectors
+</td></tr><tr><td>100-1FF
+</td><td>6502 stack
+</td></tr><tr><td>0FF
+</td><td>Zero page
+</td></tr><tr><td>
+</td><td><strong></strong>
+</td></tr><tr><td>Zero Page
+</td><td><strong></strong>
+</td></tr><tr><td>FF
+</td><td>The top bit is set during an ESCAPE condition
+</td></tr><tr><td>FD- FE
+</td><td>Address following detected BRK instruction
+</td></tr><tr><td>FC
+</td><td>User IRQ routine save slot for register A
+</td></tr><tr><td>D0 to FB
+</td><td>allocated to machine operating system
+</td></tr><tr><td>
+</td><td>
+</td></tr><tr><td>B0 to CF
+</td><td>allocated to current filing system
+</td></tr><tr><td>90 to AF
+</td><td>allocated to machine operating system
+</td></tr><tr><td>70 to 8F
+</td><td>free for user routines
+</td></tr><tr><td>0 to 6F
+</td><td>BASIC language
+</td></tr></tbody></table>
+
+
+
+
+<h2>Printer, User I/O and 1MHz Bus circuits</h2>
+
+<h2>Video outputs</h2>
+
+
+
+
+
+<h2>RS423 Interface</h2>
+
+
+<h2>Analogue inputs</h2>
+
+<h2>Disc interface</h2>
+
+
+<h2>Cassette interface</h2>
+
+
+
+
+<h2>VDU code summary</h2>
+
+<p></p><table border="1">
+<tbody><tr><td width="15"><strong><tt>Decimal</tt></strong>
+</td><td width="15"><tt><strong>Hex</strong></tt>
+</td><td width="8"><tt><strong>CTRL</strong></tt>
+</td><td width="43"><strong><tt>ASCII</tt></strong> <tt><strong>abbrev</strong>.</tt>
+</td><td width="1"><tt><strong>Bytes extra</strong></tt>
+</td><td width="194"><strong><tt>Meaning</tt></strong>
+</td></tr><tr><td align="right">0
+</td><td>0
+</td><td><tt>@</tt>
+</td><td><tt>NUL</tt>
+</td><td>0
+</td><td>does nothing
+</td></tr><tr><td align="right">1
+</td><td>1
+</td><td>A
+</td><td>SOH
+</td><td>1
+</td><td>send next character to printer only
+</td></tr><tr><td align="right">2
+</td><td>2
+</td><td>B
+</td><td>STX
+</td><td>0
+</td><td>enable printer
+</td></tr><tr><td align="right">3
+</td><td>3
+</td><td>C
+</td><td>ETX
+</td><td>0
+</td><td>disable printer
+</td></tr><tr><td align="right">4
+</td><td>4
+</td><td><tt>D</tt>
+</td><td>EOT
+</td><td>0
+</td><td>write text at text cursor
+</td></tr><tr><td align="right">5
+</td><td>5
+</td><td>E
+</td><td>ENQ
+</td><td>0
+</td><td>write text at graphics cursor
+</td></tr><tr><td align="right"><tt>6</tt>
+</td><td>6
+</td><td>F
+</td><td>ACK
+</td><td><tt>0</tt>
+</td><td>enable VDU drivers
+</td></tr><tr><td align="right">7
+</td><td>7
+</td><td>G
+</td><td>BEL
+</td><td>0
+</td><td>make a short beep
+</td></tr><tr><td align="right">8
+</td><td>8
+</td><td>H
+</td><td>BS
+</td><td>0
+</td><td>backspace cursor one character
+</td></tr><tr><td align="right">9
+</td><td><tt>9</tt>
+</td><td>I
+</td><td>HT
+</td><td>0
+</td><td>forwardspace cursor one character
+</td></tr><tr><td align="right">10
+</td><td>A
+</td><td>J
+</td><td>LF
+</td><td>0
+</td><td>move cursor down one line
+</td></tr><tr><td align="right"><tt>11</tt>
+</td><td>B
+</td><td>K
+</td><td>VT
+</td><td>0
+</td><td>move cursor up one line
+</td></tr><tr><td align="right">12
+</td><td>C
+</td><td>L
+</td><td><tt>FF</tt>
+</td><td>0
+</td><td>clear text area
+</td></tr><tr><td align="right">13
+</td><td>D
+</td><td>M
+</td><td>CR
+</td><td>0
+</td><td>move cursor to start of current line
+</td></tr><tr><td align="right">14
+</td><td>E
+</td><td>N
+</td><td>SO
+</td><td>0
+</td><td>page mode on
+</td></tr><tr><td align="right">15
+</td><td>F
+</td><td>O
+</td><td>SI
+</td><td>0
+</td><td>page mode off
+</td></tr><tr><td align="right">16
+</td><td>10
+</td><td>P
+</td><td>DLE
+</td><td>0
+</td><td>clear graphics area
+</td></tr><tr><td align="right">17
+</td><td>11
+</td><td>Q
+</td><td>DC1
+</td><td>1
+</td><td>define text colour
+</td></tr><tr><td align="right">18
+</td><td>12
+</td><td>R
+</td><td>DC2
+</td><td>2
+</td><td>define graphics colour
+</td></tr><tr><td align="right">19
+</td><td>13
+</td><td>S
+</td><td>DC3
+</td><td>5
+</td><td>define logical colour
+</td></tr><tr><td align="right">20
+</td><td>14
+</td><td>T
+</td><td>DC4
+</td><td>0
+</td><td>restore default iogical colours
+</td></tr><tr><td align="right">21
+</td><td>15
+</td><td>U
+</td><td>NAK
+</td><td>0
+</td><td>disable VDU drivers or delete current line
+</td></tr><tr><td align="right">22
+</td><td>16
+</td><td>V
+</td><td>SYN
+</td><td>1
+</td><td>select screen mode
+</td></tr><tr><td align="right">23
+</td><td>17
+</td><td>W
+</td><td>ETB
+</td><td>9
+</td><td>re-program display character
+</td></tr><tr><td align="right">24
+</td><td>18
+</td><td>X
+</td><td>CAN
+</td><td>8
+</td><td>define graphics window
+</td></tr><tr><td align="right">25
+</td><td>19
+</td><td>Y
+</td><td>EM
+</td><td>5
+</td><td>PLOT K,x,y
+</td></tr><tr><td align="right">26
+</td><td>1A
+</td><td>Z
+</td><td>SUB
+</td><td>0
+</td><td>restore default windows
+</td></tr><tr><td align="right">27
+</td><td>1B
+</td><td>[
+</td><td>ESC
+</td><td>0
+</td><td>does nothing
+</td></tr><tr><td align="right">28
+</td><td>1C
+</td><td>\
+</td><td>FS
+</td><td>4
+</td><td>define text window
+</td></tr><tr><td align="right">29
+</td><td>1D
+</td><td>]
+</td><td>GS
+</td><td>4
+</td><td>define graphics origin
+</td></tr><tr><td align="right">30
+</td><td>1E
+</td><td>^
+</td><td>RS
+</td><td>0
+</td><td>home text cursor to top left
+</td></tr><tr><td align="right">31
+</td><td>1F
+</td><td>_
+</td><td>US
+</td><td>2
+</td><td>move text cursor to x,y
+</td></tr><tr><td align="right">127
+</td><td>7F
+</td><td>
+</td><td>DEL
+</td><td>0
+</td><td>backspace and delete
+</td></tr></tbody></table>
+
+
+
+
+
+<h2>FX and OSBYTE Call Summary</h2>
+
+<p></p><table>
+<tbody><tr><td width="58"><strong>Decimal</strong>
+</td><td width="24"><strong>Hex</strong>
+</td><td width="232"><strong>Function</strong>
+</td></tr></tbody></table>
+<p></p><table>
+<tbody><tr><td width="7">*
+</td><td width="40">0
+</td><td width="24">0
+</td><td width="227">Prints operating system version number
+</td></tr><tr><td>
+</td><td>1
+</td><td>1
+</td><td>Reserved for application programs
+</td></tr><tr><td>
+</td><td>2
+</td><td>2
+</td><td>Selects input device
+</td></tr><tr><td>
+</td><td>3
+</td><td>3
+</td><td>Selects output devices
+</td></tr><tr><td>*
+</td><td>4
+</td><td>4
+</td><td>Enable/disable cursor edit keys
+</td></tr><tr><td>*
+</td><td>5
+</td><td>5
+</td><td>Select printer type
+</td></tr><tr><td>*
+</td><td>6
+</td><td>6
+</td><td>Set Printer ignore character
+</td></tr><tr><td>*
+</td><td>7
+</td><td>7
+</td><td>Set RS423 receive baud rate
+</td></tr><tr><td>*
+</td><td>8
+</td><td>8
+</td><td>Set RS423 transmit baud rate
+</td></tr><tr><td>*
+</td><td>9
+</td><td>9
+</td><td>Set flash period of first colour
+</td></tr><tr><td>*
+</td><td>10
+</td><td>A
+</td><td>Set flash period of second colour
+</td></tr><tr><td>*
+</td><td>11
+</td><td>B
+</td><td>Set auto-repeat delay
+</td></tr><tr><td>*
+</td><td>12
+</td><td>C
+</td><td>Set auto-repeat period
+</td></tr><tr><td>
+</td><td>13
+</td><td>D
+</td><td>Disable various events
+</td></tr><tr><td>
+</td><td>14
+</td><td>E
+</td><td>Enable various events
+</td></tr><tr><td>*
+</td><td>15
+</td><td>F
+</td><td>Flush all or just input buffer
+</td></tr><tr><td>*
+</td><td>16
+</td><td>10
+</td><td>Select number of ADC channels
+</td></tr><tr><td>
+</td><td>17
+</td><td>11
+</td><td>Force start of conversion on ADC channel
+</td></tr><tr><td>
+</td><td>18
+</td><td>12
+</td><td>Reset user defined function keys
+</td></tr><tr><td>
+</td><td>19
+</td><td>13
+</td><td>Wait for field synchronization
+</td></tr><tr><td>
+</td><td>20
+</td><td>14
+</td><td>Explode soft character RAM allocation
+</td></tr></tbody></table>
+<p></p><table>
+<tbody><tr><td width="7">
+</td><td width="40">21
+</td><td width="24">15
+</td><td width="227">Flush selected buffer
+</td></tr><tr><td>*
+</td><td>124
+</td><td>7C
+</td><td>Reset ESCAPE flag
+</td></tr><tr><td>*
+</td><td>125
+</td><td>7D
+</td><td>Set ESCAPE flag
+</td></tr><tr><td>*
+</td><td>126
+</td><td>7E
+</td><td>Acknowledge detection of ESCAPE condition
+</td></tr><tr><td>*
+</td><td>127
+</td><td>7F
+</td><td>Check end of file status
+</td></tr><tr><td>*
+</td><td>128
+</td><td>80
+</td><td>Read ADC channel/fire buttons/last conversion
+</td></tr><tr><td>*
+</td><td>129
+</td><td>81
+</td><td>Read key within time limit
+</td></tr><tr><td>*
+</td><td>130
+</td><td>82
+</td><td>Read machine high order address
+</td></tr><tr><td>*
+</td><td>131
+</td><td>83
+</td><td>Read top of operating system RAM Address
+</td></tr><tr><td>*
+</td><td>132
+</td><td>84
+</td><td>Read bottom of display RAM address
+</td></tr><tr><td>*
+</td><td>133
+</td><td>85
+</td><td>Read lowest address for particular MODE
+</td></tr><tr><td>*
+</td><td>134
+</td><td>86
+</td><td>Read text cursor position
+</td></tr><tr><td>*
+</td><td>135
+</td><td>87
+</td><td>Read character at text cursor position
+</td></tr><tr><td>
+</td><td>136
+</td><td>88
+</td><td>Reserved
+</td></tr><tr><td>*
+</td><td>137
+</td><td>89
+</td><td>Turn cassette motor ON/OFF
+</td></tr><tr><td>
+</td><td>138
+</td><td><tt>8A</tt>
+</td><td>Insert character into keyboard buffer
+</td></tr></tbody></table>
+
+
+
+<p></p><table>
+<tbody><tr><td width="44"><strong>Decimal</strong>
+</td><td width="23"><strong>Hex</strong>
+</td><td width="237"><strong>Function</strong>
+</td></tr></tbody></table>
+<p></p><table>
+<tbody><tr><td width="7">*
+</td><td width="26">139
+</td><td width="17">8B
+</td><td width="237">Set file options
+</td></tr><tr><td>*
+</td><td>140
+</td><td>8C
+</td><td>Select cassette file system and set speed
+</td></tr><tr><td>
+</td><td>141
+</td><td>8D
+</td><td>Reserved
+</td></tr><tr><td>
+</td><td>142
+</td><td>8E
+</td><td>Reserved
+</td></tr><tr><td>
+</td><td>143
+</td><td>8F
+</td><td>Reserved
+</td></tr><tr><td>*
+</td><td>144
+</td><td>90
+</td><td>Alter TV display position/interlace
+</td></tr><tr><td>
+</td><td>145
+</td><td>91
+</td><td>Remove character from buffer
+</td></tr><tr><td>
+</td><td>146
+</td><td>92
+</td><td>Read from I/O area FRED
+</td></tr><tr><td>
+</td><td>147
+</td><td>93
+</td><td>Write to I/O area FRED
+</td></tr><tr><td>
+</td><td>148
+</td><td>94
+</td><td>Read from I/O area JIM
+</td></tr><tr><td>
+</td><td>149
+</td><td>95
+</td><td>Write to I/O area JIM
+</td></tr><tr><td>
+</td><td>150
+</td><td>96
+</td><td>Read from I/O area SHEILA
+</td></tr><tr><td>
+</td><td>151
+</td><td>97
+</td><td>Write to I/O area SHEILA
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>
+</td></tr><tr><td>
+</td><td>224
+</td><td>E0
+</td><td>Cancel VDU queue
+</td></tr><tr><td>
+</td><td>225
+</td><td>E1
+</td><td>Set base number for function-key codes
+</td></tr><tr><td>
+</td><td>226
+</td><td>E2
+</td><td>Set base number for SHIFT function-key codes
+</td></tr><tr><td>
+</td><td>227
+</td><td>E3
+</td><td>Set base number for CTRL function-key codes
+</td></tr><tr><td>
+</td><td>228
+</td><td>E4
+</td><td>Set base number for SHIFT/CTRL function key codes
+</td></tr><tr><td>
+</td><td>229
+</td><td>E5
+</td><td>Escape=&amp; 1B
+</td></tr><tr><td>
+</td><td>230
+</td><td>E6
+</td><td>Enable/disable normalESCAPE key action
+</td></tr><tr><td>
+</td><td>231
+</td><td>E7
+</td><td>Enable/disable user 6522 IRQ
+</td></tr><tr><td>
+</td><td>232
+</td><td>E8
+</td><td>Enable/disable 6850 ACIA IRQ
+</td></tr></tbody></table>
+
+<em></em>
+
+<p></p><table border="1">
+<tbody><tr><td width="87"><tt><strong>Routine</strong></tt>
+</td><td width="27">
+</td><td width="83"><strong><tt>Vector</tt></strong>
+</td><td width="0">
+</td><td width="120"><strong><tt>Summary of function</tt></strong>
+</td></tr></tbody></table>
+<p></p><table border="1">
+<tbody><tr><td width="39"><tt>Name</tt>
+</td><td width="43"><tt>Address</tt>
+</td><td width="0">
+</td><td width="35">Name
+</td><td width="43"><tt>Address</tt>
+</td><td width="0">
+</td><td width="120">
+</td></tr></tbody></table>
+<p></p><table border="1">
+<tbody><tr><td width="53">
+</td><td width="31">
+</td><td width="2">
+</td><td width="49"><tt>UPTV</tt>
+</td><td width="31">222
+</td><td width="2">
+</td><td width="120">User print routine
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>EVNTV
+</td><td>220
+</td><td>
+</td><td>Event interrupt
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>FSCV
+</td><td>21E
+</td><td>
+</td><td>File system control entry
+</td></tr><tr><td>OSFIND
+</td><td>FFCE
+</td><td>
+</td><td>FINDV
+</td><td>21C
+</td><td>
+</td><td><tt>Open or close a file</tt>
+</td></tr><tr><td>OSGBPB
+</td><td>FFD1
+</td><td>
+</td><td>GBPBV
+</td><td>21A
+</td><td>
+</td><td>Load or save a block of memory to a file
+</td></tr><tr><td>OSBPUT
+</td><td>FFD4
+</td><td>
+</td><td>BPUTV
+</td><td>218
+</td><td>
+</td><td>Save a single byte to file from A
+</td></tr><tr><td>OSBGET
+</td><td>FFD7
+</td><td>
+</td><td>BGETV
+</td><td>216
+</td><td>
+</td><td>Load a single byte to A from file
+</td></tr><tr><td>OSARGS
+</td><td>FFDA
+</td><td>
+</td><td>ARGSV
+</td><td>214
+</td><td>
+</td><td>Load or save data about a file
+</td></tr><tr><td>OSFILE
+</td><td>FFDD
+</td><td>
+</td><td>FILEV
+</td><td>212
+</td><td>
+</td><td>Load or save a complete file
+</td></tr><tr><td>OSRDCH
+</td><td>FFE0
+</td><td>
+</td><td>RDCHV
+</td><td>210
+</td><td>
+</td><td><tt>Read character (from keyboard) to A</tt>
+</td></tr><tr><td>OSASCI
+</td><td>FFE3
+</td><td>
+</td><td>??
+</td><td>??
+</td><td>
+</td><td>Write a character (to screen) from A plus LF if (A)=&amp;0D
+</td></tr><tr><td>OSNEWL
+</td><td>FFE7
+</td><td>
+</td><td>??
+</td><td>??
+</td><td>
+</td><td>Write LF,CR (&amp;0A,&amp;0D) to screen
+</td></tr><tr><td>OSWRCH
+</td><td>FFEE
+</td><td>
+</td><td>WRCHV
+</td><td>20E
+</td><td>
+</td><td>Write character (to screen) from A
+</td></tr><tr><td>OSWORD
+</td><td>FFF1
+</td><td>
+</td><td>WORDV
+</td><td>20C
+</td><td>
+</td><td>Perfrom miscellaneous OS operation using control block to pass parameters
+</td></tr><tr><td>OSBYTE
+</td><td>FFF4
+</td><td>
+</td><td>BYTEV
+</td><td>20A
+</td><td>
+</td><td>Perfrom miscellaneous OS operation using registers to pass parameters
+</td></tr><tr><td>OSCLI
+</td><td>FFF7
+</td><td>
+</td><td>CLIV
+</td><td>208
+</td><td>
+</td><td>Interpret the command line given
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>IRQ2V
+</td><td>206
+</td><td>
+</td><td>Unrecognised IRQ vector
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>IRQ1V
+</td><td>204
+</td><td>
+</td><td>All IRQ vector
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>BRKV
+</td><td>202
+</td><td>
+</td><td>Break vector
+</td></tr><tr><td>
+</td><td>
+</td><td>
+</td><td>USERV
+</td><td>200
+</td><td>
+</td><td>Reserved
+</td></tr></tbody></table>
+
+<hr>
+
+
+<p><img src="memorymap_files/Exit.gif" alt="Exit: " align="middle"><a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/index.html"><img src="memorymap_files/BBC_002.gif" alt="BBC Microcomputer User Guide; " align="middle"></a><a href="http://central.kaserver5.org/Kasoft/Typeset/index.html"><img src="memorymap_files/KaType.gif" alt="Kasoft Typesetting; " align="middle"></a><a href="http://central.kaserver5.org/index.html"><img src="memorymap_files/Central.gif" alt="Archer" align="middle"></a>
+
+</p><hr>
+
+<!-- Begin footer -->
+<p><a href="http://central.kaserver5.org/Kasoft/Typeset/BBC/Intro.html">The BBC Microcomputer User Guide</a> was written by John Coll and edited by David Allen for the British Broadcasting Corporation.
+</p><p>Optical character recognition and original formatting effort by Mark Usher.
+</p><p>HTML version maintained by: Kade "Archer" Hansson; 
+<a href="mailto:archer@dialix.com.au">e-mail: 
+archer@dialix.com.au</a>
+</p><p>Last updated: Monday 12th February 2001
+<!-- End footer -->
+
+
+
+</p></body></html>
